@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Fantasy Cricket</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color rgb(255, 255, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color rgb(255, 255, 255)</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Your Selections</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPlainTextEdit" name="batsman">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+           </font>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string>Batsman (BAT) ##</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="bowler">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>12</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+           </font>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string>Bowlers (BOW) ##</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="allrounder">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+           </font>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string>Allrounder (AR) ##</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="wicketkeeper">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>29</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+           </font>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="plainText">
+           <string>WicketKeeper (WK) ##</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QPlainTextEdit" name="pointavailable">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="plainText">
+           <string>Point Available: 1000</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="pointused">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>27</height>
+           </size>
+          </property>
+          <property name="plainText">
+           <string>Point Used: 0000</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QRadioButton" name="radio_bat">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Comic Sans MS</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>BAT</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radio_bow">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Comic Sans MS</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>BOW</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radio_ar">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Comic Sans MS</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>AR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radio_wk">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Comic Sans MS</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>WK</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QListWidget" name="available_player">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+             </font>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="teamname">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Team Name : </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="selected_player">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+             </font>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="Manage_Team">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(177, 177, 177);</string>
+   </property>
+   <widget class="QMenu" name="menuManages_Teams">
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Manages Teams</string>
+    </property>
+    <addaction name="new_team"/>
+    <addaction name="open_team"/>
+    <addaction name="save_team"/>
+    <addaction name="evaluate_team"/>
+   </widget>
+   <addaction name="menuManages_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <action name="new_team">
+   <property name="text">
+    <string>NEW Team</string>
+   </property>
+  </action>
+  <action name="open_team">
+   <property name="text">
+    <string>OPEN Team</string>
+   </property>
+  </action>
+  <action name="save_team">
+   <property name="text">
+    <string>SAVE Team</string>
+   </property>
+  </action>
+  <action name="evaluate_team">
+   <property name="text">
+    <string>EVALUATE Team</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
